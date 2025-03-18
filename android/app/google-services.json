@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "25308580160",
+    "firebase_url": "https://iotsample-4c1e6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "iotsample-4c1e6",
+    "storage_bucket": "iotsample-4c1e6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25308580160:android:994ec263568d33aba9d2a5",
+        "android_client_info": {
+          "package_name": "com.example.crudapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY1TOTWeHtTiEo3mvrHvH6XsSwBYCXpjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25308580160:android:8bc09c91bebe25cfa9d2a5",
+        "android_client_info": {
+          "package_name": "com.example.gasguard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY1TOTWeHtTiEo3mvrHvH6XsSwBYCXpjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25308580160:android:6a4583dd03cb11d8a9d2a5",
+        "android_client_info": {
+          "package_name": "com.example.gasmonitor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY1TOTWeHtTiEo3mvrHvH6XsSwBYCXpjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
