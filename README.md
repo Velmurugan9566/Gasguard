@@ -1,81 +1,39 @@
-# 🔌 GasGuard - ESP8266 for Gas Detection
+# 🚨 GasGuard – Flutter App for IoT-based Gas Leakage Monitoring
 
-[![Arduino](https://img.shields.io/badge/Platform-ESP8266-orange.svg)](https://www.espressif.com/en/products/socs/esp8266)
-[![C++](https://img.shields.io/badge/Language-C++-blue.svg)]()
-[![Firebase](https://img.shields.io/badge/Data-Firebase-lightgreen.svg)](https://firebase.google.com/)
-[![SMS](https://img.shields.io/badge/Alert-Twilio-red.svg)](https://www.twilio.com/)
+[![Flutter](https://img.shields.io/badge/Framework-Flutter-blue.svg)](https://flutter.dev/)
+[![Firebase](https://img.shields.io/badge/Backend-Firebase-yellow.svg)](https://firebase.google.com/)
+[![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com/)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)]()
 
-This is the Arduino-compatible firmware for the **ESP8266 NodeMCU** that detects gas leakage using an MQ-6 sensor and performs real-time actions like:
-
-- Triggering alarms and exhaust fan
-- Sending sensor data to Firebase
-- Sending SMS alerts via Twilio API
+This is the official Flutter-based mobile application for **GasGuard**, an IoT-driven gas leakage detection and monitoring system. It connects to the ESP8266 device via **Firebase Realtime Database** and displays **live gas values**, **controls exhaust fan and alarm**, and stores **leakage history** in **Firestore**.
 
 ---
 
-## ⚙️ Features
+## 📱 Key Features
 
-- 🧪 Read real-time gas concentration from MQ-6 sensor
-- 🔔 Activate buzzer and fan when threshold is exceeded
-- 🌐 Send sensor values to Firebase Realtime Database
-- 📄 Log threshold events into Firestore with timestamps
-- 📩 Send **SMS alerts** to saved contacts via Twilio (no app required)
-
----
-
-## 🔧 Tech Stack
-
-| Component        | Tech              |
-|------------------|-------------------|
-| Microcontroller  | ESP8266 NodeMCU   |
-| IDE              | Arduino IDE       |
-| Programming      | C++               |
-| Cloud Sync       | Firebase (RTDB + Firestore) |
-| Alerting         | Twilio (HTTP API) |
+- 🔴 **Live Sensor Monitoring** – Displays real-time gas value from Firebase
+- 📊 **History Page** – Shows all threshold-exceeding events with timestamp
+- 🚨 **Push Notifications** – Alerts user when gas level exceeds the set threshold
+- 🔁 **Fan & Alarm Control** – Toggle fan and alarm status remotely (with safety checks)
+- 📵 **Control Lock** – Fan button is disabled during gas leakage to ensure safety
+- 📂 **About and Contact Pages** – Informational screens built-in
+- 📡 Works in sync with the ESP8266 firmware to automate responses
 
 ---
 
-## 🛠 Hardware Used
+## 🛠️ Tech Stack
 
-- MQ-6 Gas Sensor
-- ESP8266 NodeMCU
-- 5V DC Fan & Relay Module
-- Active Buzzer
-- 5V Step-down Converter
-- Jumper Wires + Power Supply
-
----
-
-## 📦 Library Dependencies
-
-- `ESP8266WiFi.h`
-- `FirebaseESP8266.h`
-- `WiFiClientSecure.h` (for Twilio HTTPS)
-- `ArduinoJson.h`
-
-Install these via Arduino Library Manager.
+| Layer        | Technology                     |
+|--------------|--------------------------------|
+| Frontend     | Flutter (Dart)                 |
+| Backend      | Firebase Realtime Database     |
+| Data Logs    | Firebase Firestore             |
+| Notifications| Firebase Cloud Messaging (FCM) |
+| IDE          | Android Studio                 |
 
 ---
 
-## 🚀 Getting Started
+## 🖼 Screenshots
 
-1. Open `main.ino` in Arduino IDE  
-2. Update WiFi, Firebase, and Twilio credentials  
-3. Select **NodeMCU 1.0 (ESP-12E Module)** as board  
-4. Connect via USB and click Upload
+> *(Replace placeholders if needed and store them in `/assets/screenshots/`)*
 
----
-
-## 🔮 Future Enhancements
-
-- [ ] EEPROM-based offline logging
-- [ ] Auto-reconnect Wi-Fi fallback logic
-- [ ] Multi-sensor support for different gases
-- [ ] AI-based leak prediction
-- [ ] Battery backup status indicator
-
----
-
-## 📄 License
-
-MIT License
